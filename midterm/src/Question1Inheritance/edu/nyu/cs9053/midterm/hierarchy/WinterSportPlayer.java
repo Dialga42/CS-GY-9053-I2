@@ -32,6 +32,6 @@ public abstract class WinterSportPlayer {
         if (o == null || this.getClass() != o.getClass())
             return false;
         WinterSportPlayer t = (WinterSportPlayer) o;
-        return this.age == t.getAge() && this.name.equals(t.getName());
+        return this.age == t.getAge() && this.name != null && this.name.equals(t.getName());
     }
 }
